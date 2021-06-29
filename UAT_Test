@@ -2438,25 +2438,36 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "franchiseeRoyaltyID": {
-                    "type": "string"
-                  },
-                  "invoiceNO": {
-                    "type": "string"
-                  },
-                  "franchiseeNo": {
-                    "type": "string"
-                  },
-                  "invoiceDate": {
-                    "type": "date"
-                  },
-                  "paymentStatus": {
-                    "type": "string"
-                  },
-                  "lastModifiedDate": {
-                    "type": "date"
-                  }
-                },
+                    "constraints":{
+                        "type":"object",
+                        "properties": {
+                            "franchiseeNo": {
+                                "type":"object",
+                                "properties": {
+                                    "clause": {
+                                        "type":"string"
+                                    },
+                                    "values": {
+                                        "type":"array"
+                                    }
+   
+   
+                                }
+                            }
+                        }
+                    },
+                    "page":{
+                        "type":"object",
+                        "properties": {
+                            "pageId": {
+                                "type":"string"
+                            },
+                            "pageSize":{
+                                "type":"string"
+                            }
+                        }
+                    
+                }},
                 "example": {
                   "constraints": {
                     "franchiseeNo": {
@@ -3015,18 +3026,35 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "franchiseeRoyaltyID": {
-                    "type": "string"
-                  },
-                  "royaltyType": {
-                    "type": "string"
-                  },
-                  "franchiseeNo": {
-                    "type": "string"
-                  },
-                  "dateReceived": {
-                    "type": "date"
-                  }
+                    "constraints":{
+                        "type":"object",
+                        "properties": {
+                            "franchiseeNo": {
+                                "type":"object",
+                                "properties": {
+                                    "clause": {
+                                        "type":"string"
+                                    },
+                                    "values": {
+                                        "type":"array"
+                                    }
+   
+   
+                                }
+                            }
+                        }
+                    },
+                    "page":{
+                        "type":"object",
+                        "properties": {
+                            "pageId": {
+                                "type":"string"
+                            },
+                            "pageSize":{
+                                "type":"string"
+                            }
+                        }
+                    }
                 },
                 "example": [
                   {
@@ -3303,21 +3331,35 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "franchiseeRoyaltyID": {
-                    "type": "string"
-                  },
-                  "invoiceNO": {
-                    "type": "string"
-                  },
-                  "paymentNo": {
-                    "type": "string"
-                  },
-                  "franchiseeNo": {
-                    "type": "string"
-                  },
-                  "dateApplied": {
-                    "type": "date"
-                  }
+                    "constraints":{
+                        "type":"object",
+                        "properties": {
+                            "franchiseeNo": {
+                                "type":"object",
+                                "properties": {
+                                    "clause": {
+                                        "type":"string"
+                                    },
+                                    "values": {
+                                        "type":"array"
+                                    }
+   
+   
+                                }
+                            }
+                        }
+                    },
+                    "page":{
+                        "type":"object",
+                        "properties": {
+                            "pageId": {
+                                "type":"string"
+                            },
+                            "pageSize":{
+                                "type":"string"
+                            }
+                        }
+                    }
                 },
                 "example": {
                   "constraints": {
@@ -3568,21 +3610,35 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "franchiseeNo": {
-                    "type": "string"
-                  },
-                  "plrepld": {
-                    "type": "string"
-                  },
-                  "statementPeriod": {
-                    "type": "date"
-                  },
-                  "submissionDate": {
-                    "type": "date"
-                  },
-                  "lastModifiedDate": {
-                    "type": "date"
-                  }
+                    "constraints":{
+                        "type":"object",
+                        "properties": {
+                            "franchiseeNo": {
+                                "type":"object",
+                                "properties": {
+                                    "clause": {
+                                        "type":"string"
+                                    },
+                                    "values": {
+                                        "type":"array"
+                                    }
+   
+   
+                                }
+                            }
+                        }
+                    },
+                    "page":{
+                        "type":"object",
+                        "properties": {
+                            "pageId": {
+                                "type":"string"
+                            },
+                            "pageSize":{
+                                "type":"string"
+                            }
+                        }
+                    }
                 },
                 "example": {
                   "constraints": {
@@ -3760,28 +3816,35 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "memoID": {
-                    "type": "string"
-                  },
-                  "franchiseeNo": {
-                    "type": "string"
-                  },
-                  "memoType": {
-                    "type": "string",
-                    "enum": [
-                      "Credit",
-                      "Debit"
-                    ]
-                  },
-                  "memoDate": {
-                    "type": "date"
-                  },
-                  "openBalance": {
-                    "type": "double"
-                  },
-                  "lastModifiedDate": {
-                    "type": "date"
-                  }
+                    "constraints":{
+                        "type":"object",
+                        "properties": {
+                            "franchiseeNo": {
+                                "type":"object",
+                                "properties": {
+                                    "clause": {
+                                        "type":"string"
+                                    },
+                                    "values": {
+                                        "type":"array"
+                                    }
+   
+   
+                                }
+                            }
+                        }
+                    },
+                    "page":{
+                        "type":"object",
+                        "properties": {
+                            "pageId": {
+                                "type":"string"
+                            },
+                            "pageSize":{
+                                "type":"string"
+                            }
+                        }
+                    }
                 },
                 "example": {
                   "constraints": {

@@ -2207,8 +2207,10 @@
                 "type": "object",
                 "properties": {
                  "constraints":{
+                     "type":"object",
                      "properties": {
                          "salesReportID": {
+                             "type":"object",
                              "properties": {
                                  "clause": {
                                      "type":"string"
@@ -2223,6 +2225,7 @@
                      }
                  },
                  "page":{
+                     "type":"object",
                      "properties": {
                          "pageId": {
                              "type":"string"

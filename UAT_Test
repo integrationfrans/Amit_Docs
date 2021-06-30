@@ -2076,9 +2076,7 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "data": {
-                    "type": "array",
-                    "properties": {
+                  
                       "franchiseeNo": {
                         "type": "string"
                       },
@@ -2167,8 +2165,8 @@
                         }
                       }
 
-                    }
-                  }
+                    
+                  
                 },
                 "example": [
                   {

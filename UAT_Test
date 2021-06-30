@@ -2079,8 +2079,7 @@
                   "data": {
                     "type": "array",
                     "items": {
-                      "type": "object"
-                    },
+                      "type": "object",
                     "properties": {
                       "franchiseeNo": {
                         "type": "string"
@@ -2097,8 +2096,7 @@
                       "financialitems": {
                         "type": "array",
                         "items": {
-                          "type": "object"
-                        },
+                          "type": "object",
                         "properties": {
                           "1": {
                             "type": "object",
@@ -2112,8 +2110,7 @@
                               "data": {
                                 "type": "array",
                                 "items": {
-                                  "type": "object"
-                                },
+                                  "type": "object",
                                 "properties": {
                                   "amount": {
                                     "type":"string"
@@ -2122,6 +2119,7 @@
                                     "type": "string"
                                   }
                                 }
+                              }
                               }
                             }
                           },
@@ -2137,8 +2135,7 @@
                               "data": {
                                 "type": "array",
                                 "items": {
-                                  "type": "object"
-                                },
+                                  "type": "object",
                                 "properties": {
                                   "amount": {
                                     "type":"string"
@@ -2148,15 +2145,16 @@
                                   }
                                 }
                               }
+                              }
                             }
                           }
                         }
-                      },
+                      }
+                    },
                       "nonFinancialitems": {
                         "type": "array",
                         "items": {
-                          "type": "object"
-                        },
+                          "type": "object",
                         "properties": {
                           "100": {
                             "type": "object",
@@ -2170,13 +2168,13 @@
                               "data": {
                                 "type": "array",
                                 "items": {
-                                  "type": "object"
-                                },
+                                  "type": "object",
                                 "properties": {
                                   "amount": {
                                     "type":"string"
                                   }
                                 }
+                              }
                               }
                             }
                           },
@@ -2192,23 +2190,23 @@
                               "data": {
                                 "type": "array",
                                 "items": {
-                                  "type": "object"
-                                },
+                                  "type": "object",
                                 "properties": {
                                   "amount": {
                                     "type":"string"
                                   }
                                 }
                               }
+                              }
                             }
                           }
                         }
+                      }
                       },
                       "finAddnlitems": {
                         "type": "array",
                         "items": {
-                          "type": "object"
-                        },
+                          "type": "object",
                         "properties": {
                           "450294861": {
                             "type": "object",
@@ -2222,21 +2220,23 @@
                               "data": {
                                 "type": "array",
                                 "items": {
-                                  "type": "object"
-                                },
+                                  "type": "object",
                                 "properties": {
                                   "amount": {
                                     "type":"string"
                                   }
                                 }
                               }
+                              }
                             }
                           }
                         }  
                       }
+                      }
                     }
                   }
-                },
+                }
+              },
                 "example": [
                   {
                     "data": [

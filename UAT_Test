@@ -2076,11 +2076,98 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "franchiseeNo": {
-                    "type": "string"
-                  },
-                  "reportPeriod": {
-                    "type": "string"
+                  "data": {
+                    "type": "array",
+                    "properties": {
+                      "franchiseeNo": {
+                        "type": "string"
+                      },
+                      "reportPeriod": {
+                        "type": "date"
+                      },
+                      "dateRecieved": {
+                        "type": "date"
+                      },
+                      "acknowledgeSalesReport": {
+                        "type": "boolean"
+                      },
+                      "financialitems": {
+                        "type": "array",
+                        "properties": {
+                          "1": {
+                            "type": "object",
+                            "properties": {
+                              "name": {
+                                "type": "string"
+                              },
+                              "calculationType": {
+                                "type": "string"
+                              },
+                              "data": {
+                                "type": "array",
+                                "properties": {
+                                  "amount": {
+                                    "type":"string"
+                                  },
+                                  "quantity": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "nonFinancialitems": {
+                        "type": "array",
+                        "properties": {
+                          "100": {
+                            "type": "object",
+                            "properties": {
+                              "name": {
+                                "type": "string"
+                              },
+                              "calculationType": {
+                                "type": "string"
+                              },
+                              "data": {
+                                "type": "array",
+                                "properties": {
+                                  "amount": {
+                                    "type":"string"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "finAddnlitems": {
+                        "type": "array",
+                        "properties": {
+                          "450294861": {
+                            "type": "object",
+                            "properties": {
+                              "name": {
+                                "type": "string"
+                              },
+                              "calculationType": {
+                                "type": "string"
+                              },
+                              "data": {
+                                "type": "array",
+                                "properties": {
+                                  "amount": {
+                                    "type":"string"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+
+                    }
                   }
                 },
                 "example": [

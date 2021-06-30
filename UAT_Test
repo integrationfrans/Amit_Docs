@@ -2078,7 +2078,12 @@
                 "properties": {
                   
                       "franchiseeNo": {
-                        "type": "string"
+                        "type": "string",
+                        "properties":{
+                          "value": {
+                            "type":"string"
+                          }
+                        }
                       },
                       "reportPeriod": {
                         "type": "date"

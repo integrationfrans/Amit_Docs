@@ -2210,7 +2210,7 @@
                 "type": "object",
                 "properties": {
                  "constraints":{
-                     "type":"object",
+                     "type":"string",
                      "properties": {
                          "salesReportID": {
                              "type":"object",

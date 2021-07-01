@@ -2467,9 +2467,160 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "name": {
-                    "type": "string"
+                  "data": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                    "properties": {
+                      "dateRecieved": {
+                        "type": "date"
+                      },
+                      "acknowledgeSalesReport": {
+                        "type": "boolean"
+                      },
+                      "financialitems": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                        "properties": {
+                          "1": {
+                            "type": "object",
+                            "properties": {
+                              "name": {
+                                "type": "string"
+                              },
+                              "calculationType": {
+                                "type": "string"
+                              },
+                              "data": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                "properties": {
+                                  "amount": {
+                                    "type":"string"
+                                  },
+                                  "quantity": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
+                              }
+                            }
+                          },
+                          "24340465": {
+                            "type": "object",
+                            "properties": {
+                              "name": {
+                                "type": "string"
+                              },
+                              "calculationType": {
+                                "type": "string"
+                              },
+                              "data": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                "properties": {
+                                  "amount": {
+                                    "type":"string"
+                                  },
+                                  "quantity": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                      "nonFinancialitems": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                        "properties": {
+                          "100": {
+                            "type": "object",
+                            "properties": {
+                              "name": {
+                                "type": "string"
+                              },
+                              "calculationType": {
+                                "type": "string"
+                              },
+                              "data": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                "properties": {
+                                  "amount": {
+                                    "type":"string"
+                                  }
+                                }
+                              }
+                              }
+                            }
+                          },
+                          "450294864": {
+                            "type": "object",
+                            "properties": {
+                              "name": {
+                                "type": "string"
+                              },
+                              "calculationType": {
+                                "type": "string"
+                              },
+                              "data": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                "properties": {
+                                  "amount": {
+                                    "type":"string"
+                                  }
+                                }
+                              }
+                              }
+                            }
+                          }
+                        }
+                      }
+                      },
+                      "finAddnlitems": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                        "properties": {
+                          "450294861": {
+                            "type": "object",
+                            "properties": {
+                              "name": {
+                                "type": "string"
+                              },
+                              "calculationType": {
+                                "type": "string"
+                              },
+                              "data": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                "properties": {
+                                  "amount": {
+                                    "type":"string"
+                                  }
+                                }
+                              }
+                              }
+                            }
+                          }
+                        }  
+                      }
+                      }
+                    }
                   }
+                
                 },
                 "example": [
                   {

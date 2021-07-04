@@ -2077,13 +2077,16 @@
                 "type": "object",
                 "properties": {
                   "franchiseeNo": {
-                    "required": true,
                     "type": "string"
                   },
                   "reportPeriod": {
                     "type": "string"
                   }
                 },
+                "required": [
+                  "franchiseeNo",
+                  "reportPeriod", 
+                ],
                 "example": [
                   {
                     "data": [

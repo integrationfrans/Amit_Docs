@@ -2077,6 +2077,7 @@
                 "type": "object",
                 "properties": {
                   "franchiseeNo": {
+                    "required": true,
                     "type": "string"
                   },
                   "reportPeriod": {

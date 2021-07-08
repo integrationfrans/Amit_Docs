@@ -2080,10 +2080,10 @@
                     "type": "string"
                   },
                   "reportPeriod": {
-                    "type": "string"
+                    "type": "date"
                   },
                   "dateReceived": {
-                    "type": "string"
+                    "type": "date"
                   }
                 },
                 "required": [

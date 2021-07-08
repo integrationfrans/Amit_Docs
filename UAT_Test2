@@ -2081,11 +2081,19 @@
                   },
                   "reportPeriod": {
                     "type": "string"
+                  },
+                  "dateReceived": {
+                    "type": "string"
+                  },
+                  "acknowledgeSalesReport": {
+                    "type": "string"
                   }
                 },
                 "required": [
                   "franchiseeNo",
-                  "reportPeriod"
+                  "reportPeriod",
+                  "dateReceived",
+                  "acknowledgeSalesReport"
                 ],
                 "example": [
                   {

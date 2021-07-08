@@ -2092,8 +2092,7 @@
                 "required": [
                   "franchiseeNo",
                   "reportPeriod",
-                  "dateReceived",
-                  "acknowledgeSalesReport"
+                  "dateReceived"
                 ],
                 "example": [
                   {

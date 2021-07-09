@@ -2080,9 +2080,17 @@
                     "type": "string"
                   },
                   "reportPeriod": {
-                    "type": "string"
+                    "type": "date"
+                  },
+                  "dateReceived": {
+                    "type": "date"
                   }
                 },
+                "required": [
+                  "franchiseeNo",
+                  "reportPeriod",
+                  "dateReceived"
+                ],
                 "example": [
                   {
                     "data": [
@@ -2277,7 +2285,7 @@
           "Sales Reports"
         ],
         "summary": "Update Existing Sales Report",
-        "description": "<p class=\"western\">You can update an existing sales report by making a PUT type request to the specified endpoint.</p><table width=\"100%\" class=\"endpoint-table\"><tr><td width=\"25%\"><strong>Operation Name</strong></td><td width=\"1%\" >:</td><td>PUT</td></tr><tr><td><strong>Production API Endpoint</strong></td><td>:</td><td valign=\"top\">https://skyapi.franconnect.net/manage-finance/sales/{salesReportID}</td></tr><tr><td><strong>UAT API Endpoint</strong></td><td>:</td><td valign=\"top\">https://skyapi.franconnectuat.net/manage-finance/sales/{salesReportID}</td></tr></table>The following items must be included in the header of the request:<ol><li><p>\"Authorization\" as the key and its value in the format \"Bearer access_token\". This access_token is generated as a part of authentication. Click <u><a href=\"#tag/Authentication\">here</a></u> for details on the steps to generate the access token.</p></li><li><p>&ldquo;Content-Type&rdquo; as the key and its value in the format &ldquo;application/json&rdquo;.</p></li><li><p>&ldquo;X-TenantId&rdquo; as the key and its value based on your FranConnect system&rsquo;s URL. Click <u><a href=\"#tag/Authentication\">here</a></u>&nbsp;for details on identifying the &ldquo;X-TenantId&rdquo;.</p></li></ol><p>The following items must be used as path parameters:</p><p>“salesReportID” which refers to the internal unique ID for the sales report. You can fetch this information by retrieving the sales report details on the basis of report number or any other constraint.</p></li></p><img src=\"images/Update_Existing_Sales_Report.png\">",
+        "description": "<p class=\"western\">You can update an existing sales report by making a PUT type request to the specified endpoint.</p><table width=\"100%\" class=\"endpoint-table\"><tr><td width=\"25%\"><strong>Operation Name</strong></td><td width=\"1%\" >:</td><td>PUT</td></tr><tr><td><strong>Production API Endpoint</strong></td><td>:</td><td valign=\"top\">https://skyapi.franconnect.net/manage-finance/sales/{salesReportID}</td></tr><tr><td><strong>UAT API Endpoint</strong></td><td>:</td><td valign=\"top\">https://skyapi.franconnectuat.net/manage-finance/sales/{salesReportID}</td></tr></table>The following items must be included in the header of the request:<ol><li><p>\"Authorization\" as the key and its value in the format \"Bearer access_token\". This access_token is generated as a part of authentication. Click <u><a href=\"#tag/Authentication\">here</a></u> for details on the steps to generate the access token.</p></li><li><p>&ldquo;Content-Type&rdquo; as the key and its value in the format &ldquo;application/json&rdquo;.</p></li><li><p>&ldquo;X-TenantId&rdquo; as the key and its value based on your FranConnect system&rsquo;s URL. Click <u><a href=\"#tag/Authentication\">here</a></u>&nbsp;for details on identifying the &ldquo;X-TenantId&rdquo;.</p></li></ol><p>The following items must be used as path parameters:</p><p>“salesReportID” refers to the internal unique ID for the sales report. You can fetch this information by retrieving the sales report details on the basis of report number or any other constraint.</p></li></p><img src=\"images/Update_Existing_Sales_Report.png\">",
         "operationId": "Update_Existing_Sales_Report",
         "consumes": [
           "application/json"
@@ -2714,7 +2722,12 @@
                     "type": "date"
                   }
                 },
-                "example": [
+                "required": [
+                  "franchiseeNo",
+                  "salesReportID",
+                  "dateReceived"
+                ],
+                "example": 
                   [
                     {
                       "data": [
@@ -2803,7 +2816,7 @@
                       ]
                     }
                   ]
-                ]
+                
               }
             }
           }
@@ -3463,6 +3476,11 @@
                     "type": "date"
                   }
                 },
+                "required": [
+                  "franchiseeNo",
+                  "statementPeriod",
+                  "submissionDate"
+                ],
                 "example": [
                   {
                     "data": [
@@ -3625,7 +3643,7 @@
           "Profit and Loss Statements"
         ],
         "summary": "Update Existing Profit/Loss Statement",
-        "description": "<p class=\"western\">You can update an existing profit and loss report by making a POST request to the specified endpoint.</p><table width=\"100%\" class=\"endpoint-table\"><tr><td width=\"25%\"><strong>Operation Name</strong></td><td width=\"1%\" >:</td><td>PUT</td></tr><tr><td><strong>Production API Endpoint</strong></td><td>:</td><td valign=\"top\">https://skyapi.franconnect.net/manage-finance/profit-loss/{plrepId}</td></tr><tr><td><strong>UAT API Endpoint</strong></td><td>:</td><td valign=\"top\">https://skyapi.franconnectuat.net/manage-finance/profit-loss/{plrepId}</td></tr></table>The following items must be included in the header of the request:<ol><li><p>\"Authorization\" as the key and its value in the format \"Bearer access_token\". This access_token is generated as a part of authentication. Click <u><a href=\"#tag/Authentication\">here</a></u> for details on the steps to generate the access token.</p></li><li><p>&ldquo;Content-Type&rdquo; as the key and its value in the format &ldquo;application/json&rdquo;.</p></li><li><p>&ldquo;X-TenantId&rdquo; as the key and its value based on your FranConnect system&rsquo;s URL. Click <u><a href=\"#tag/Authentication\">here</a></u>&nbsp;for details on identifying the &ldquo;X-TenantId&rdquo;.</p></li></ol><p>The profit and loss categories must be included in the body of the request. Click <u><a href=\"#operation/Retrieve_ProfitLoss_Categories\">here</a></u> for details on retrieving the profit and loss categories.</p></p><img src=\"images/Update_Existing_ProfitLoss_Statement.png\">",
+        "description": "<p class=\"western\">You can update an existing profit and loss report by making a PUT request to the specified endpoint.</p><table width=\"100%\" class=\"endpoint-table\"><tr><td width=\"25%\"><strong>Operation Name</strong></td><td width=\"1%\" >:</td><td>PUT</td></tr><tr><td><strong>Production API Endpoint</strong></td><td>:</td><td valign=\"top\">https://skyapi.franconnect.net/manage-finance/profit-loss/{plrepId}</td></tr><tr><td><strong>UAT API Endpoint</strong></td><td>:</td><td valign=\"top\">https://skyapi.franconnectuat.net/manage-finance/profit-loss/{plrepId}</td></tr></table>The following items must be included in the header of the request:<ol><li><p>\"Authorization\" as the key and its value in the format \"Bearer access_token\". This access_token is generated as a part of authentication. Click <u><a href=\"#tag/Authentication\">here</a></u> for details on the steps to generate the access token.</p></li><li><p>&ldquo;Content-Type&rdquo; as the key and its value in the format &ldquo;application/json&rdquo;.</p></li><li><p>&ldquo;X-TenantId&rdquo; as the key and its value based on your FranConnect system&rsquo;s URL. Click <u><a href=\"#tag/Authentication\">here</a></u>&nbsp;for details on identifying the &ldquo;X-TenantId&rdquo;.</p></li></ol><p>The profit and loss categories must be included in the body of the request. Click <u><a href=\"#operation/Retrieve_ProfitLoss_Categories\">here</a></u> for details on retrieving the profit and loss categories.</p></p><img src=\"images/Update_Existing_ProfitLoss_Statement.png\">",
         "operationId": "Update_Existing_ProfitLoss_Statement",
         "consumes": [
           "application/json"
@@ -3855,6 +3873,12 @@
                     "type": "date"
                   }
                 },
+                "required": [
+                  "franchiseeNo",
+                  "amount",
+                  "memoType",
+                  "memoDate"
+                ],
                 "example": [
                   {
                     "data": [

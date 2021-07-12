@@ -5456,7 +5456,7 @@
         }
       }
     },
-    "/common/Event and Webhook": {
+    "/Event and Webhook": {
         "tags": [
           "Event_and_Webhook"
         ],

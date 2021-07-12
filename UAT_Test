@@ -5456,9 +5456,9 @@
         }
       }
     },
-    "/Event Capture Program": {
+    "/Event and Webhooks": {
         "tags": [
-          "Event_Capture_Program"
+          "Event_and_Webhooks"
         ],
         "summary": "Event Capture Program",
         "description":"<p>FranConnect System now supports capturing events like addition, modification, and deletion. These cases can be executed in specific tabs of a franchise. Here, the captured event is pushed to a third-party system through a webhook URL.</p><br><p>To configure this feature, you need to raise a request and also provide a webhook URL (an endpoint that can receive the array of JSON). Then, send this information to helpdesk@franconnect.com.</p><br><p>Once the program/system is configured, if new data is added, updated, or deleted in any of the tabs (System and Custom), the event is captured. In just 5 minutes the information is pushed to the endpoint provided by you.</p><br><p>For Example, you add some information in the Guarantors tab. This change is captured as an ‘add’ event, and in the next 5 minutes, a call is made to the webhook URL. On the right panel, you can see the dataset format presented on the webhook URL:</p><br><p>Furthermore, if multiple modifications are made within the given 5 minutes period across the franchise(s), you will receive the array of JSON.</p><br><p>Taking another example where a Guarantor is added, and an Employee is deleted in an ABC Franchise. An update is also performed on the Entity details of the XYZ franchise in the same 5 minutes session. Then, all these events will get captured. The dataset format that you will receive for this example is given on the right-hand side</p>",

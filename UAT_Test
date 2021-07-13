@@ -5551,6 +5551,76 @@
         }
       }
     },
+     "/manage-event/Event and Webhook/{Team_id}": {
+        "put": {
+          "tags": [
+            "Event Capture Program"
+          ],
+          "summary": "New Event",
+          "description": "<p class=\"western\">Make a PUT request to the specified endpoint to update a team. You must provide the endpoint with a valid team_id as a path parameter. Refer the request body down below, along with the example on the right panel to understand what data you'll need to make this request, successfully.</p><table width=\"100%\" class=\"endpoint-table\"><tr><td width=\"25%\"><strong>Operation Name</strong></td><td width=\"1%\" >:</td><td>PUT</td></tr><tr><td><strong>Production API Endpoint</strong></td><td>:</td><td valign=\"top\">[url needs reviewing]]</td></tr><tr><td><strong>UAT API Endpoint</strong></td><td>:</td><td valign=\"top\">[url needs reviewing]</td></tr></table>The following items must be included in the header of the request:<ol><li><p>\"Authorization\" as the key and its value in the format \"Bearer access_token\". This access_token is generated as a part of authentication. Click <u><a href=\"#tag/Authentication\">here</a></u> for details on the steps to generate the access token.</p></li><li><p>&ldquo;Content-Type&rdquo; as the key and its value in the format &ldquo;application/json&rdquo;.</p></li><li><p>&ldquo;X-TenantId&rdquo; as the key and its value based on your FranConnect system&rsquo;s URL. Click <u><a href=\"#tag/Authentication\">here</a></u>&nbsp;for details on identifying the &ldquo;X-TenantId&rdquo;. <p><img src=\"images/Update_Team.PNG\"></ol>",
+          "operationId": "New_Event",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+                  "example": [
+                    {
+                      "user_team_id": "krish-team",
+                      "name": "K-01",
+                      "description": "krish Team 1 - an updated description",
+                      "accessibility": "Public",
+                      "discussion": "Yes",
+                      "people": [
+                        {
+                          "user_no": "1816771777",
+                          "user_name": "Ken Durling"
+                        },
+                        {
+                          "user_no": "657774469",
+                          "user_name": "Kim Mraz"
+                        }
+                      ],
+                      "owners": [
+                        {
+                          "user_no": "1090459335",
+                          "user_name": "Andrew Wenger"
+                        },
+                        {
+                          "user_no": "245538916",
+                          "user_name": "Johnny Kris"
+                        }
+                      ],
+                      "playbooks": [
+                        {
+                          "playbook_id": "1237234047",
+                          "name": "Launch With 3 Tasks",
+                          "record_type": "team"
+                        }
+                      ],
+                      "type": "Static"
+                    }
+                  ]
+                }
+              }
+            },
+          "responses": {
+            "200": {
+              "$ref": "#/components/responses/UpdateTeamResp"
+            },
+            "401": {
+              "description": "Unauthorized"
+            },
+            "403": {
+              "description": "Forbidden"
+            },
+            "404": {
+              "description": "Not Found"
+            }
+          }
+        }
+      },
 
     "/userauth/oauth/token": {
       "post": {

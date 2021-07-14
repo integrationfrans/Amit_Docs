@@ -5552,13 +5552,13 @@
       }
     },
      "/manage-event/Event and Webhook/{Team_id}": {
-        "get": {
+        "post": {
           "tags": [
-            "Event Capture Program"
+            "Sales"
           ],
-          "summary": "New Event",
+          "summary": "Lead",
           "description": "NOTHING",
-          "operationId": "New_Event",
+          "operationId": "LEAD",
           "produces": [
             "application/json"
           ],

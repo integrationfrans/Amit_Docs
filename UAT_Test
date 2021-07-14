@@ -5567,7 +5567,7 @@
           ],
           "responses": {
             "200": {
-              "$ref": "#/components/responses/UpdateTeamResp"
+              
             }
             
           }
@@ -5586,7 +5586,57 @@
           ],
           "responses": {
             "200": {
-              "$ref": "#/components/responses/UpdateTeamResp"
+              "content": {
+                "application/json": {
+                  "example": {
+                    "errors": null,
+                    "data1": [
+                        {
+                        "tabName": "Guarantors",
+                        "subModule": "fimGuarantor",
+                        "changeEvent": "add",
+                        "referenceId": "1201817558",
+                        "eventDateTime": "2021-07-09T01:40:17.398674Z",
+                        "franchiseeName": "0001-USA",
+                        "parentReferenceId": "1831705924"
+                        }
+                      ],
+
+                      "data2":[
+                        
+                          {
+                          "tabName": "Guarantors",
+                          "subModule": "fimGuarantor",
+                          "changeEvent": "add",
+                          "referenceId": "1201817558",
+                          "eventDateTime": "2021-07-09T02:52:28.398456Z",
+                          "franchiseeName": "ABC",
+                          "parentReferenceId": "1831705924"
+                          },
+                          {
+                          "tabName": "Employees",
+                          "subModule": "fimEmployeesMapping",
+                          "changeEvent": "delete",
+                          "referenceId": "1194156640",
+                          "eventDateTime": "2021-07-09T02:51:44.151463Z",
+                          "franchiseeName": "ABC",
+                          "parentReferenceId": "1831705924"
+                          },
+                          {
+                          "tabName": "Center Info",
+                          "subModule": "franchisees",
+                          "changeEvent": "update",
+                          "referenceId": "1631650236",
+                          "eventDateTime": "2021-07-09T02:52:10.067197Z",
+                          "franchiseeName": "XYZ",
+                          "parentReferenceId": "1973910563"
+                          }
+                          
+                      ],
+                    "page": null
+                  }
+                }
+              }
             }
             
           }

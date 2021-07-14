@@ -5552,154 +5552,21 @@
       }
     },
      "/manage-event/Event and Webhook/{Team_id}": {
-        "put": {
+        "get": {
           "tags": [
             "Event Capture Program"
           ],
           "summary": "New Event",
           "description": "NOTHING",
           "operationId": "New_Event",
-          "consumes": [
-            "application/json"
-          ],
           "produces": [
             "application/json"
           ],
-           "requestBody": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "properties": {
-                      "user_team_id": {
-                        "type": "string"
-                      },
-                      "name": {
-                        "type": "string"
-                      },
-                      "description": {
-                        "type": "string"
-                      },
-                      "accessibility": {
-                        "type": "string",
-                        "enum": [
-                          "Public",
-                          "Private"
-                        ]
-                      },
-                      "discussion": {
-                        "type": "string",
-                        "enum": [
-                          "Yes",
-                          "No"
-                        ]
-                      },
-                      "people": {
-                        "type": "array",
-                        "items": {
-                          "type": "object",
-                          "properties": {
-                            "user_no": {
-                              "type": "integer"
-                            },
-                            "user_name": {
-                              "type": "string"
-                            }
-                          }
-                        }
-                      },
-                      "owners": {
-                        "type": "array",
-                        "items": {
-                          "type": "object",
-                          "properties": {
-                            "user_no": {
-                              "type": "integer"
-                            },
-                            "user_name": {
-                              "type": "string"
-                            }
-                          }
-                        }
-                      },
-                      "playbooks": {
-                        "type": "array",
-                        "items": {
-                          "type": "object",
-                          "properties": {
-                            "playbook_id": {
-                              "type": "integer"
-                            },
-                            "name": {
-                              "type": "string"
-                            },
-                            "record_type": {
-                              "type": "string"
-                            }
-                          }
-                        }
-                      },
-                      "type": {
-                        "type": "string"
-                      }
-                    }
-                  },
-                  "example": [
-                    {
-                      "user_team_id": "krish-team",
-                      "name": "K-01",
-                      "description": "krish Team 1 - an updated description",
-                      "accessibility": "Public",
-                      "discussion": "Yes",
-                      "people": [
-                        {
-                          "user_no": "1816771777",
-                          "user_name": "Ken Durling"
-                        },
-                        {
-                          "user_no": "657774469",
-                          "user_name": "Kim Mraz"
-                        }
-                      ],
-                      "owners": [
-                        {
-                          "user_no": "1090459335",
-                          "user_name": "Andrew Wenger"
-                        },
-                        {
-                          "user_no": "245538916",
-                          "user_name": "Johnny Kris"
-                        }
-                      ],
-                      "playbooks": [
-                        {
-                          "playbook_id": "1237234047",
-                          "name": "Launch With 3 Tasks",
-                          "record_type": "team"
-                        }
-                      ],
-                      "type": "Static"
-                    }
-                  ]
-                }
-              }
-            }
-          },
           "responses": {
             "200": {
               "$ref": "#/components/responses/UpdateTeamResp"
-            },
-            "401": {
-              "description": "Unauthorized"
-            },
-            "403": {
-              "description": "Forbidden"
-            },
-            "404": {
-              "description": "Not Found"
             }
+            
           }
         }
       },

@@ -5564,13 +5564,7 @@
           "operationId": "LEAD",
           "produces": [
             "application/json"
-          ],
-          "responses": {
-            "200": {
-              
-            }
-            
-          }
+          ]
         }
       },
       "/manage-event/Event and Webhook/{team_id}": {

@@ -5554,7 +5554,8 @@
         }
       }
     },
-    
+     "": {
+        "post": {
           "tags": [
             "Sales Data"
           ],
@@ -5564,7 +5565,8 @@
           "produces": [
             "application/json"
           ]
-      ,
+        }
+      },
       "/manage-event/Events and Webhooks/{team_id}": {
         "post": {
           "tags": [

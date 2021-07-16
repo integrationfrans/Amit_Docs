@@ -2061,7 +2061,10 @@
                     },
                     "reportPeriod": {
                       "type": "string"
-                    }
+                    },
+                    "dateReceived": {
+                        "type": "date"
+                      }
                   },
                   "required": [
                     "franchiseeNo",

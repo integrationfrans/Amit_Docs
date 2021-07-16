@@ -2063,6 +2063,11 @@
                       "type": "string"
                     }
                   },
+                  "required": [
+                    "franchiseeNo",
+                    "reportPeriod",
+                    "dateReceived"
+                  ],
                   "example": [
                     {
                       "data": [
@@ -2682,6 +2687,11 @@
                       "type": "date"
                     }
                   },
+                  "required": [
+                    "franchiseeNo",
+                    "salesReportID",
+                    "dateReceived"
+                  ],
                   "example": [
                     [
                       {
@@ -3431,6 +3441,11 @@
                       "type": "date"
                     }
                   },
+                  "required": [
+                    "franchiseeNo",
+                    "statementPeriod",
+                    "submissionDate"
+                  ],
                   "example": [
                     {
                       "data": [
@@ -3811,6 +3826,12 @@
                       "type": "date"
                     }
                   },
+                  "required": [
+                    "franchiseeNo",
+                    "amount",
+                    "memoType",
+                    "memoDate"
+                  ],
                   "example": [
                     {
                       "data": [

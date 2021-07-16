@@ -3463,7 +3463,7 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [
+        "parameters": [S
           {
             "in": "body",
             "name": "datalist",
@@ -3489,12 +3489,16 @@
                   },
                   "submissionDate": {
                     "type": "date"
+                  },
+                  "plItems": {
+                    "type": "array of objects"
                   }
                 },
                 "required": [
                   "franchiseeNo",
                   "statementPeriod",
-                  "submissionDate"
+                  "submissionDate",
+                  "plItems"
                 ],
                 "example": [
                   {

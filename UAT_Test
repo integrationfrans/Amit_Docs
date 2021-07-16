@@ -2091,12 +2091,16 @@
                   },
                   "dateReceived": {
                     "type": "date"
+                  },
+                  "financialItems": {
+                    "type": "array of objects"
                   }
                 },
                 "required": [
                   "franchiseeNo",
                   "reportPeriod",
-                  "dateReceived"
+                  "dateReceived",
+                  "financialItems"
                 ],
                 "example": [
                   {
@@ -2727,12 +2731,16 @@
                   },
                   "dateReceived": {
                     "type": "date"
+                  },
+                  "financialItems": {
+                    "type": "array of objects"
                   }
                 },
                 "required": [
                   "franchiseeNo",
                   "salesReportID",
-                  "dateReceived"
+                  "dateReceived",
+                  "financialItems"
                 ],
                 "example": 
                   [

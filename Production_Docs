@@ -2064,13 +2064,17 @@
                     },
                     "dateReceived": {
                         "type": "date"
+                      },
+                      "financialItems": {
+                        "type": "array of objects"
                       }
-                  },
-                  "required": [
-                    "franchiseeNo",
-                    "reportPeriod",
-                    "dateReceived"
-                  ],
+                    },
+                    "required": [
+                      "franchiseeNo",
+                      "reportPeriod",
+                      "dateReceived",
+                      "financialItems"
+                    ],
                   "example": [
                     {
                       "data": [
@@ -2688,13 +2692,17 @@
                     },
                     "dateReceived": {
                       "type": "date"
-                    }
-                  },
-                  "required": [
-                    "franchiseeNo",
-                    "salesReportID",
-                    "dateReceived"
-                  ],
+                    },
+                    "financialItems": {
+                        "type": "array of objects"
+                      }
+                    },
+                    "required": [
+                      "franchiseeNo",
+                      "salesReportID",
+                      "dateReceived",
+                      "financialItems"
+                    ],
                   "example": [
                     [
                       {
@@ -3442,13 +3450,17 @@
                     },
                     "submissionDate": {
                       "type": "date"
-                    }
-                  },
-                  "required": [
-                    "franchiseeNo",
-                    "statementPeriod",
-                    "submissionDate"
-                  ],
+                    },
+                    "plItems": {
+                        "type": "array of objects"
+                      }
+                    },
+                    "required": [
+                      "franchiseeNo",
+                      "statementPeriod",
+                      "submissionDate",
+                      "plItems"
+                    ],
                   "example": [
                     {
                       "data": [

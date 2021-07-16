@@ -3463,7 +3463,7 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [S
+        "parameters": [
           {
             "in": "body",
             "name": "datalist",

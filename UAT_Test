@@ -5585,7 +5585,7 @@
             "INFO MANAGER WEBHOOK"
           ],
           "summary": "FRANCHISE",
-          "description": "<p>FranConnect System now supports Webhook to pass information from Franconnect’s Info Mgr to another web application about a location. When any information is added, modified, or deleted for tabs within a franchise record in Info Mgr.</p><br><p><b>Getting Started</b></p><p>To enable this feature, you can send an email to helpdesk@franconnect.com and share the webhook URL(an endpoint that can receive the array of JSON) where the updates can be pushed in the JSON format. Once the program is configured, if new data is added, updated, or deleted in any of the tabs (System and Custom), the event is captured. In just 5 minutes the information is pushed to the endpoint provided by you.</p><br><p>For Example, when some information is added in the Guarantors tab. This change is captured as an ‘add’ event, and in the next 5 minutes, a call is made to the webhook URL. On the right panel you can see the <b>dataset1</b> format that you will receive on the webhook URL:</p><br><p>Furthermore, if multiple modifications are made within the given 5 minutes period across the franchise(s), you will receive the array of JSON. Taking another example for this where a Guarantor is added, and an Employee is deleted in an ABC Franchise. An update is also performed on the Center Info details of the XYZ franchise in the same 5 minutes session. Then, all these events will get captured. The <b>dataset2</b> format that you will receive for this example is given on the right-hand side<p>",
+          "description": "<p>FranConnect System now supports Webhook to pass information from Franconnect’s Info Mgr to another web application about a location. When any information is added, modified, or deleted for tabs within a franchise record in Info Mgr.</p><br><p><b>Getting Started</b></p><p>To enable this feature, you can send an email to helpdesk@franconnect.com and share the webhook URL(an endpoint that can receive the array of JSON) where the updates can be pushed in the JSON format. Once the program is configured, if new data is added, updated, or deleted in any of the tabs (System and Custom), the event is captured. In just 5 minutes the information is pushed to the endpoint provided by you.</p><br><p>Furthermore, if multiple modifications are made within the given 5 minutes period across the franchise(s), you will receive the array of JSON. For example, a Guarantor is added, and an Employee is deleted in an ABC Franchise. An update is also performed on the Center Info details of the XYZ franchise in the same 5 minutes session. Then, all these events will get captured. The <b>dataset</b> format that you will receive for this example is given on the right-hand side<p>",
           "operationId": "FRANCHISE",
           "produces": [
             "application/json"
@@ -5595,21 +5595,8 @@
               "content": {
                 "application/json": {
                   "example": {
-                    "dataset1": 
 
-                    [
-                        {
-                        "tabName": "Guarantors",
-                        "subModule": "fimGuarantor",
-                        "changeEvent": "add",
-                        "referenceId": "1201817558",
-                        "eventDateTime": "2021-07-09T01:40:17.398674Z",
-                        "franchiseeName": "0001-USA",
-                        "parentReferenceId": "1831705924"
-                        }
-                      ],
-
-                      "dataset2":
+                      "dataset":
 
                       [
                         

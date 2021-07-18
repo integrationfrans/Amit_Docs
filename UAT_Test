@@ -5648,7 +5648,90 @@
           "operationId": "LEAD/CONTACT",
           "produces": [
             "application/json"
-          ]
+          ],
+          "responses": {
+            "200": {
+              "content": {
+                "application/json": {
+                  "example": {
+                    "fcResponse": {
+                      "responseData": {
+                        "cmLead": {
+                          "ownerType": "Corporate",
+                          "country": "USA",
+                          "birthdate": "",
+                          "anniversarydate": "",
+                          "companyName": "",
+                          "bestTimeToContact": "",
+                          "suffix": "",
+                          "cmLeadTypeID": "",
+                          "areaID": "",
+                          "unsubscribe": "Opt-In Request not Sent",
+                          "cmLeadStatusID": "New",
+                          "state": "District of Columbia",
+                          "emailIds": "sample@domain.com",
+                          "leadOwnerID": "Martha Hustle",
+                          "leadOwnerReferenceId": "850485234",
+                          "leadAddedByReferenceId": "1",
+                          "areaReferenceId": "",
+                          "bounceEmailStatus": "No",
+                          "cmSource3ID": "",
+                          "referralContact": "",
+                          "leadLastName": "Fernandez",
+                          "cmSource1ID": "",
+                          "zipcode": "20001",
+                          "smsUnsubscribeDate": "",
+                          "franchiseeReferenceId": "",
+                          "lastContactedField": "",
+                          "divisionID": "",
+                          "position": "",
+                          "primaryContactMethod": "Email",
+                          "extn": "",
+                          "city": "ohio",
+                          "title": "",
+                          "spamEmailStatus": "No",
+                          "referenceId": "1976134029",
+                          "leadFirstName": "Christian",
+                          "phoneNumbers": "(717) 999-1111",
+                          "faxNumbers": "",
+                          "referralAccount": "",
+                          "cmRatingID": "",
+                          "tenantID": "developers",
+                          "leadAddedBy": "FranConnect Administrator",
+                          "bounceReason": "",
+                          "smsUnsubscribe": "Opt-In Request not Sent",
+                          "unsubscribeDate": "",
+                          "leadAddDate": "2021-07-18T15:45Z",
+                          "franchiseeNo": "",
+                          "alternateEmail": "",
+                          "leadModifyDate": "2021-07-18T15:52Z",
+                          "convertedBy": "",
+                          "address": "",
+                          "comments": "",
+                          "mobileNumbers": "",
+                          "cmSource2ID": "",
+                          "unsubscribeReason": "",
+                          "contactDetails": {
+                            "contactFirstName": "",
+                            "contactLastName": "",
+                            "referenceId": ""
+                          },
+                          "unsubscribeReasonDetail": "",
+                          "convertedOn": "",
+                          "divisionReferenceId": "",
+                          "serviceID": "Product/Service Update, Newsletters, Announcements, Webinars and Events, Offers, Others, Send Email, Email Communications, Information Email"
+                        }
+                      },
+                      "responseStatus": "Success",
+                      "responseId": "1729301091"
+                    }
+                  }
+                }
+              }
+            }
+            
+          }
+
         }
       },
 

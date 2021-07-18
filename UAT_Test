@@ -5479,7 +5479,104 @@
           "operationId": "LEAD",
           "produces": [
             "application/json"
-          ]
+          ],
+          "responses": {
+            "200": {
+              "content": {
+                "application/json": {
+                  "example": {
+                      "fcResponse": {
+                        "responseData": {
+                          "fsLead": {
+                            "locationId1b": "",
+                            "country": "USA",
+                            "leadKilledReasonComment": "",
+                            "dateOfOpen": "",
+                            "investTimeframe": "",
+                            "stateID": "Pennsylvania",
+                            "companyName": "",
+                            "bestTimeToContact": "",
+                            "marketingCodeId": "",
+                            "_bestContactTime344129770": "",
+                            "preferredCity2": "",
+                            "preferredCity1": "",
+                            "primaryPhoneToCall": "",
+                            "statusChangeDate": "",
+                            "division": "",
+                            "unsubscribe": "Opted-In",
+                            "sourceOfFunding": "",
+                            "fax": "",
+                            "zip": "17254",
+                            "forecastClosureDate": "",
+                            "leadOwnerID": "Gragg Salzano",
+                            "leadOwnerReferenceId": "4344056308",
+                            "lastAttended": "2019-12-03T09:56Z",
+                            "bounceEmailStatus": "No",
+                            "leadStatusID": "Contacted",
+                            "probability": "0",
+                            "coApplicantRelationshipID": "",
+                            "homePhone": "",
+                            "webSiteLead": "No",
+                            "ipAddress": "",
+                            "liquidCapitalMax": "More Than $100,000",
+                            "liquidCapitalMin": "",
+                            "firstName": "Cristian",
+                            "phone": "(717) 917-1111",
+                            "forecastRating": "",
+                            "countyID": "",
+                            "background": "",
+                            "lastUpdate": "2021-07-16T12:52Z",
+                            "nextCallDate": "",
+                            "salutation": "Mr.",
+                            "smartSchedulerAppointmentDate": "",
+                            "leadSource2ID": "Internet",
+                            "preferredStateId2": "",
+                            "preferredStateId1": "",
+                            "preferredCountry1": "",
+                            "lastName": "Hernandez",
+                            "preferredCountry2": "",
+                            "city": "SCOTLAND",
+                            "spamEmailStatus": "No",
+                            "referenceId": "319496793",
+                            "browserType": "",
+                            "noOfFieldSold": "",
+                            "franchiseAwarded": "",
+                            "otherLeadSourceDetail": "You Have a New Lead from VeteransOpportunities.com",
+                            "requestDate": "2019-12-03T08:56Z",
+                            "tenantID": "developers",
+                            "bounceReason": "",
+                            "phoneExt": "",
+                            "address": "#43, Palmum Street",
+                            "comments": "",
+                            "address2": "",
+                            "_nickname743760937": "",
+                            "mobile": "",
+                            "unsubscribeReason": "",
+                            "locationId2": "",
+                            "emailID": "sample@domain.com",
+                            "locationId1": "",
+                            "_iAgreeToReceiveTheFranchiseBrochureAndF886597519": "Yes",
+                            "leadKilledReason": "",
+                            "leadRatingID": "",
+                            "homePhoneExt": "",
+                            "noOfUnitReq": "",
+                            "forecastRevenue": "",
+                            "unsubscribeReasonDetail": "",
+                            "divisionReferenceId": "",
+                            "serviceID": "Product/Service Update,Newsletters,Announcements,Webinars and Events,Offers,Others,Email Communications",
+                            "leadSource3ID": "Others"
+                          }
+                        },
+                        "responseStatus": "Success",
+                        "responseId": "717320366"
+                      
+                    }
+                  }
+                }
+              }
+            }
+            
+          }
         }
       },
       "/Customer Webhook URL": {

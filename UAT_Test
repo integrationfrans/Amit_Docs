@@ -5475,7 +5475,7 @@
             "Sales Webhook"
           ],
           "summary": "LEAD",
-          "description": "<p>To enable the Webhook feature, you can send an email to helpdesk@franconnect.com and share the webhook URL(an endpoint that can receive the array of JSON) where the updates can be pushed in the JSON format. Once the feature is enabled, the Webhook URL must be configured for receiving Webhook notifications. Please read the following steps to configure your Webhook URL:<ol><li>Enter Workflow Name and select Workflow Type in the Sales > Workflows.</li><li>Select when to Trigger the Workflow accordingly.</li><li>Choose Workflow condition “Which Leads do you want to execute this workflow on?” – All Leads or Leads matching required condition(s). If selecting “All Leads”, then as the name suggests, the Workflow condition would apply to all the Leads. But, if selecting “Leads matching required condition(s)”, then select Fields to filter Leads from the drop-down list.</li><li>Choose Action from the drop-down list, and select “Configure Webhook URL”.<p><img src=\"images/Create_Workflow.png\"></li><li>A pop-up “Configure Webhook URL” would display. Enter the valid Webhook URL, and click “Associate & Save”.</li><p><img src=\"images/Configure_Webhook_URL.png\"></ol></p><br><p><b>Receiving Webhook Notifications</b></p><p>FranConnect Sky System would send Webhook notifications via HTTP POST requests in the JSON Format to the URL endpoints that you defined to Retrieve Primary Info of a Lead in the Sales Module along with the Tenant ID. Tenant ID would be the name of the Tenant. An example of the dataset format generated is given on the right panel.</p>",
+          "description": "<p>To enable the Webhook feature, you can send an email to helpdesk@franconnect.com and share the webhook URL(an endpoint that can receive the array of JSON) where the updates can be pushed in the JSON format. Once the feature is enabled, the Webhook URL must be configured for receiving Webhook notifications. Please read the following steps to configure your Webhook URL:<ol><li>Enter Workflow Name and select Workflow Type in the Sales > Workflows.</li><li>Select when to Trigger the Workflow accordingly.</li><li>Choose Workflow condition “Which Leads do you want to execute this workflow on?” – All Leads or Leads matching required condition(s). If selecting “All Leads”, then as the name suggests, the Workflow condition would apply to all the Leads. But, if selecting “Leads matching required condition(s)”, then select Fields to filter Leads from the drop-down list.</li><li>Choose Action from the drop-down list, and select “Configure Webhook URL”.<p><img src=\"images/Create_Workflow.png\"></li><li>A pop-up “Configure Webhook URL” would display. Enter the valid Webhook URL, and click “Associate & Save”.</li><p><img src=\"images/Configure_Webhook_URL.png\"></ol></p><br><p><b>Receiving Webhook Notifications</b></p><p>FranConnect Sky System would send Webhook notifications via HTTP POST requests in the JSON Format to the URL endpoints that you defined to Retrieve Primary Info of a Lead in the Sales Module along with the Tenant ID. Tenant ID would be the name of the Tenant. An example of the dataset format is given on the right panel.</p>",
           "operationId": "LEAD",
           "produces": [
             "application/json"
@@ -5585,7 +5585,7 @@
             "INFO MANAGER WEBHOOK"
           ],
           "summary": "FRANCHISE",
-          "description": "<p>FranConnect System now supports Webhook to pass information from Franconnect’s Info Mgr to another web application about a location. When any information is added, modified, or deleted for tabs within a franchise record in Info Mgr.</p><br><p><b>Getting Started</b></p><p>To enable this feature, you can send an email to helpdesk@franconnect.com and share the webhook URL(an endpoint that can receive the array of JSON) where the updates can be pushed in the JSON format. Once the program is configured, if new data is added, updated, or deleted in any of the tabs (System and Custom), the event is captured. In just 5 minutes the information is pushed to the endpoint provided by you.</p><br><p>Furthermore, if multiple modifications are made within the given 5 minutes period across the franchise(s), you will receive the array of JSON. For example, a Guarantor is added, and an Employee is deleted in an ABC Franchise. An update is also performed on the Center Info details of the XYZ franchise in the same 5 minutes session. Then, all these events will get captured. The <b>dataset</b> format that you will receive for this example is given on the right-hand side<p>",
+          "description": "<p>FranConnect System now supports Webhook to pass information from Franconnect’s Info Mgr to another web application about a location. When any information is added, modified, or deleted for tabs within a franchise record in Info Mgr.</p><br><p><b>Getting Started</b></p><p>To enable this feature, you can send an email to helpdesk@franconnect.com and share the webhook URL(an endpoint that can receive the array of JSON) where the updates can be pushed in the JSON format. Once the program is configured, if new data is added, updated, or deleted in any of the tabs (System and Custom), the event is captured. In just 5 minutes the information is pushed to the endpoint provided by you.</p><br><p>Furthermore, if multiple modifications are made within the given 5 minutes period across the franchise(s), you will receive the array of JSON. For example, a Guarantor is added, and an Employee is deleted in an ABC Franchise. An update is also performed on the Center Info details of the XYZ franchise in the same 5 minutes session. Then, all these events will get captured. The dataset format that you will receive for this example is given on the right-hand side<p>",
           "operationId": "FRANCHISE",
           "produces": [
             "application/json"
@@ -5644,95 +5644,11 @@
             "CRM WEBHOOK"
           ],
           "summary": "LEAD/CONTACT",
-          "description": "<p>To enable the Webhook feature, you can send an email to helpdesk@franconnect.com and share the webhook URL(an endpoint that can receive the array of JSON) where the updates can be pushed in the JSON format. Once the feature is enabled, the Webhook URL must be configured for receiving Webhook notifications. Please read the following steps to configure your Webhook URL:<ol><li>Enter Workflow Name and select Workflow Type in the Contact Manager > Workflows.</li><li>Select when to Trigger the Workflow accordingly.</li><li>Choose Workflow condition “Which Leads do you want to execute this workflow on?” – All Leads or Leads matching required condition(s). If selecting “All Leads”, then as the name suggests, the Workflow condition would apply to all the Leads. But, if selecting “Leads matching required condition(s)”, then select Fields to filter Leads from the drop-down list.</li><li>Choose Action from the drop-down list, and select “Configure Webhook URL”.<p><img src=\"images/Create_CRM_Workflow.png\"></li><li>A pop-up “Configure Webhook URL” would display. Enter the valid Webhook URL, and click “Associate & Save”.</li><p><img src=\"images/Configure_CRM_Webhook_URL.png\"></ol></p><br><p><b>Receiving Webhook Notifications</b></p><p>FranConnect Sky System would send Webhook notifications via HTTP POST requests in the JSON Format to the URL endpoints that you defined to Retrieve Primary Info of a Lead or Contact in the CRM Module along with the Tenant ID. Tenant ID would be the name of the Tenant. An example of the dataset format generated is given on the right panel.</p>",
+          "description": "<p>To enable the Webhook feature, you can send an email to helpdesk@franconnect.com and share the webhook URL(an endpoint that can receive the array of JSON) where the updates can be pushed in the JSON format. Once the feature is enabled, the Webhook URL must be configured for receiving Webhook notifications. Please read the following steps to configure your Webhook URL:<ol><li>Enter Workflow Name and select Workflow Type in the Contact Manager > Workflows.</li><li>Select when to Trigger the Workflow accordingly.</li><li>Choose Workflow condition “Which Leads do you want to execute this workflow on?” – All Leads or Leads matching required condition(s). If selecting “All Leads”, then as the name suggests, the Workflow condition would apply to all the Leads. But, if selecting “Leads matching required condition(s)”, then select Fields to filter Leads from the drop-down list.</li><li>Choose Action from the drop-down list, and select “Configure Webhook URL”.<p><img src=\"images/Create_CRM_Workflow.png\"></li><li>A pop-up “Configure Webhook URL” would display. Enter the valid Webhook URL, and click “Associate & Save”.</li><p><img src=\"images/Configure_CRM_Webhook_URL.png\"></ol></p><br><p><b>Receiving Webhook Notifications</b></p><p>FranConnect Sky System would send Webhook notifications via HTTP POST requests in the JSON Format to the URL endpoints that you defined to Retrieve Primary Info of a Lead or Contact in the CRM Module along with the Tenant ID. Tenant ID would be the name of the Tenant. An example of the dataset format is given on the right panel.</p>",
           "operationId": "LEAD/CONTACT",
           "produces": [
             "application/json"
-          ],
-          "responses": {
-            "200": {
-              "content": {
-                "application/json": {
-                  "example": {
-                      "fcResponse": {
-                        "responseData": {
-                            "fcResponse": {
-                              "responseData": {
-                                "cmLead": {
-                                  "ownerType": "Corporate",
-                                  "country": "USA",
-                                  "birthdate": "",
-                                  "anniversarydate": "",
-                                  "companyName": "",
-                                  "bestTimeToContact": "",
-                                  "suffix": "",
-                                  "cmLeadTypeID": "",
-                                  "areaID": "",
-                                  "unsubscribe": "Opt-In Request not Sent",
-                                  "cmLeadStatusID": "New",
-                                  "state": "District of Columbia",
-                                  "emailIds": "sample@domain.com",
-                                  "leadOwnerID": "Martha Hustle",
-                                  "leadOwnerReferenceId": "850485234",
-                                  "leadAddedByReferenceId": "1",
-                                  "areaReferenceId": "",
-                                  "bounceEmailStatus": "No",
-                                  "cmSource3ID": "",
-                                  "referralContact": "",
-                                  "leadLastName": "Fernandez",
-                                  "cmSource1ID": "",
-                                  "zipcode": "20001",
-                                  "smsUnsubscribeDate": "",
-                                  "franchiseeReferenceId": "",
-                                  "lastContactedField": "",
-                                  "divisionID": "",
-                                  "position": "",
-                                  "primaryContactMethod": "Email",
-                                  "extn": "",
-                                  "city": "ohio",
-                                  "title": "",
-                                  "spamEmailStatus": "No",
-                                  "referenceId": "1976134029",
-                                  "leadFirstName": "Christian",
-                                  "phoneNumbers": "(717) 999-1111",
-                                  "faxNumbers": "",
-                                  "referralAccount": "",
-                                  "cmRatingID": "",
-                                  "tenantID": "developers",
-                                  "leadAddedBy": "FranConnect Administrator",
-                                  "bounceReason": "",
-                                  "smsUnsubscribe": "Opt-In Request not Sent",
-                                  "unsubscribeDate": "",
-                                  "leadAddDate": "2021-07-18T15:45Z",
-                                  "franchiseeNo": "",
-                                  "alternateEmail": "",
-                                  "leadModifyDate": "2021-07-18T15:52Z",
-                                  "convertedBy": "",
-                                  "address": "",
-                                  "comments": "",
-                                  "mobileNumbers": "",
-                                  "cmSource2ID": "",
-                                  "unsubscribeReason": "",
-                                  "contactDetails": {
-                                    "contactFirstName": "",
-                                    "contactLastName": "",
-                                    "referenceId": ""
-                                  },
-                                  "unsubscribeReasonDetail": "",
-                                  "convertedOn": "",
-                                  "divisionReferenceId": "",
-                                  "serviceID": "Product/Service Update, Newsletters, Announcements, Webinars and Events, Offers, Others, Send Email, Email Communications, Information Email"
-                                }
-                              },
-                              "responseStatus": "Success",
-                              "responseId": "1729301091"
-                            }
-                  }
-                }
-              }
-            }
-            
-          }
+          ]
         }
       },
 

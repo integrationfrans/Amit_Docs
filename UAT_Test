@@ -160,7 +160,7 @@
     },
     {
     "name": "CRM WEBHOOK",
-    "description": "<p>Use webhooks in workflows to pass information about a Lead/Contact from FranConnect to another web application..</p>"
+    "description": "<p>Use webhooks in workflows to pass information about a Lead/Contact from FranConnect to another web application.</p>"
     },
     {
     "name": "INFO MANAGER WEBHOOK",

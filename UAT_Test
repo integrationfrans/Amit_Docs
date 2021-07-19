@@ -5594,9 +5594,7 @@
             "200": {
               "content": {
                 "application/json": {
-                  "example": {
-
-                      "data":
+                  "example": 
 
                       [
                         
@@ -5630,7 +5628,7 @@
                           
                       ]
 
-                  }
+                  
                 }
               }
             }

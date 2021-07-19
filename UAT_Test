@@ -156,15 +156,15 @@
     },
     {
     "name": "Sales Webhook",
-    "description": "<p>In this module we can capture an event inside the Sales category via a Webhook.</p>"
+    "description": "<p>Use webhooks in workflows to pass information about a Lead from Franconnect to another web application.</p>"
     },
     {
     "name": "CRM WEBHOOK",
-    "description": "<p>In this module we can capture an event inside the CRM category via a Webhook.</p>"
+    "description": "<p>Use webhooks in workflows to pass information about a Lead/Contact from Franconnect to another web application..</p>"
     },
     {
     "name": "INFO MANAGER WEBHOOK",
-    "description": "<p>In this module we can capture an event inside the INFO Manager category via a Webhook.</p>"
+    "description": "<p>FranConnect System now supports Webhook to pass information from Franconnect’s Info Mgr to another web application about a location. When any information is added, modified, or deleted for tabs within a franchise record in Info Mgr.</p>"
 
     }
   ],
@@ -5608,7 +5608,7 @@
             "INFO MANAGER WEBHOOK"
           ],
           "summary": "FRANCHISE",
-          "description": "<p>FranConnect System now supports Webhook to pass information from Franconnect’s Info Mgr to another web application about a location. When any information is added, modified, or deleted for tabs within a franchise record in Info Mgr.</p><br><p>To enable this feature, you can send an email to helpdesk@franconnect.com and share the webhook URL(an endpoint that can receive the array of JSON) where the updates can be pushed in the JSON format. Once the program is configured, if new data is added, updated, or deleted in any of the tabs (System and Custom), the event is captured. In just 5 minutes the information is pushed to the endpoint provided by you.</p><br><p>Furthermore, if multiple modifications are made within the given 5 minutes period across the franchise(s), you will receive the array of JSON. For example, a Guarantor is added, and an Employee is deleted in an ABC Franchise. An update is also performed on the Center Info details of the XYZ franchise in the same 5 minutes session. Then, all these events will get captured. The dataset format that you will receive for this example is given on the right-hand side<p>",
+          "description": "<p>To enable this feature, you can send an email to helpdesk@franconnect.com and share the webhook URL(an endpoint that can receive the array of JSON) where the updates can be pushed in the JSON format. Once the program is configured, if new data is added, updated, or deleted in any of the tabs (System and Custom), the event is captured. In just 5 minutes the information is pushed to the endpoint provided by you.</p><br><p>Furthermore, if multiple modifications are made within the given 5 minutes period across the franchise(s), you will receive the array of JSON. For example, a Guarantor is added, and an Employee is deleted in an ABC Franchise. An update is also performed on the Center Info details of the XYZ franchise in the same 5 minutes session. Then, all these events will get captured. The dataset format that you will receive for this example is given on the right-hand side<p>",
           "operationId": "FRANCHISE",
           "produces": [
             "application/json"
@@ -5675,7 +5675,7 @@
             "CRM WEBHOOK"
           ],
           "summary": "LEAD/CONTACT",
-          "description": "<p>To enable the Webhook feature, you can send an email to helpdesk@franconnect.com and share the webhook URL where the updates can be pushed in the JSON format. Once the feature is enabled, the Webhook URL must be configured for receiving Webhook notifications. Please read the following steps to configure your Webhook URL:<ol><li>Enter Workflow Name and select Workflow Type in the Contact Manager > Workflows. You can either choose Lead or Contact Type. Here, we have taken Lead Type of Workflow.</li><li>Select when to Trigger the Workflow accordingly.</li><li>Choose Workflow condition “Which Leads do you want to execute this workflow on?” – All Leads or Leads matching required condition(s). If selecting “All Leads”, then as the name suggests, the Workflow condition would apply to all the Leads. But, if selecting “Leads matching required condition(s)”, then select Fields to filter Leads from the drop-down list.</li><li>Choose Action from the drop-down list, and select “Configure Webhook URL”.<p><img src=\"images/Create_CRM_Workflow.png\"></li><li>A pop-up “Configure Webhook URL” would display. Enter the valid Webhook URL, and click “Associate & Save”.</li><p><img src=\"images/Configure_CRM_Webhook_URL.png\"></ol></p><br><p><b>Receiving Webhook Notifications</b></p><p>FranConnect Sky System would send Webhook notifications via HTTP POST requests in the JSON Format to the URL endpoints that you defined to Retrieve Primary Info of a Lead or Contact in the CRM Module along with the Tenant ID. Tenant ID would be the name of the Tenant. An example of the dataset format is given on the right panel.</p>",
+          "description": "<p>To enable the Webhook feature, you can send an email to helpdesk@franconnect.com and share the webhook URL where the updates can be pushed in the JSON format. Once the feature is enabled, the Webhook URL must be configured for receiving Webhook notifications. Please read the following steps to configure your Webhook URL:<ol><li>Enter Workflow Name and select Workflow Type along with Record Type in the Contact Manager > Workflows. For this instance, we have selected Lead as the Record Type.</li><li>Select when to Trigger the Workflow accordingly.</li><li>Choose Workflow condition “Which Leads do you want to execute this workflow on?” – All Leads or Leads matching required condition(s). If selecting “All Leads”, then as the name suggests, the Workflow condition would apply to all the Leads. But, if selecting “Leads matching required condition(s)”, then select Fields to filter Leads from the drop-down list.</li><li>Choose Action from the drop-down list, and select “Configure Webhook URL”.<p><img src=\"images/Create_CRM_Workflow.png\"></li><li>A pop-up “Configure Webhook URL” would display. Enter the valid Webhook URL, and click “Associate & Save”.</li><p><img src=\"images/Configure_CRM_Webhook_URL.png\"></ol></p><br><p><b>Receiving Webhook Notifications</b></p><p>FranConnect Sky System would send Webhook notifications via HTTP POST requests in the JSON Format to the URL endpoints that you defined to Retrieve Primary Info of a Lead or Contact in the CRM Module along with the Tenant ID. Tenant ID would be the name of the Tenant. An example of the dataset format is given on the right panel.</p>",
           "operationId": "LEAD/CONTACT",
           "produces": [
             "application/json"

@@ -156,15 +156,15 @@
     },
     {
     "name": "Sales Webhook",
-    "description": "<p>Use webhooks in workflows to pass information about a Lead from Franconnect to another web application.</p>"
+    "description": "<p>Use webhooks in workflows to pass information about a Lead from FranConnect to another web application.</p>"
     },
     {
     "name": "CRM WEBHOOK",
-    "description": "<p>Use webhooks in workflows to pass information about a Lead/Contact from Franconnect to another web application..</p>"
+    "description": "<p>Use webhooks in workflows to pass information about a Lead/Contact from FranConnect to another web application..</p>"
     },
     {
     "name": "INFO MANAGER WEBHOOK",
-    "description": "<p>FranConnect System now supports Webhook to pass information from Franconnect’s Info Mgr to another web application about a location. When any information is added, modified, or deleted for tabs within a franchise record in Info Mgr.</p>"
+    "description": "<p>FranConnect System now supports Webhook to pass information from FranConnect’s Info Mgr to another web application about a location. When any information is added, modified, or deleted for tabs within a franchise record in Info Mgr.</p>"
 
     }
   ],

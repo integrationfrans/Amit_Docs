@@ -234,7 +234,29 @@
       "displayName": "Refresh Token",
       "name": "Refresh Token",
       "url": "tag/Refresh-token"
+    },
+    {
+        "displayName": "Events and Webhooks",
+        "name": "Events and Webhooks",
+        "url": "tag/Events-and-Webhooks"
+    },
+    {
+        "displayName": "Sales Webhook",
+        "name": "Sales Webhook",
+        "url": "tag/Sales-Webhook"
+    }, 
+    {
+        "displayName": "Info Manager Webhook",
+        "name": "Info Manager Webhook",
+        "url": "tag/INFO-MANAGER-WEBHOOK"
+    }, 
+    {
+        "displayName": "CRM WEBHOOK",
+        "name": "CRM WEBHOOK",
+        "url": "tag/CRM-WEBHOOK"
     }
+   
+
   ],
   "components": {}
 }

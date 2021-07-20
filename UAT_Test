@@ -159,7 +159,7 @@
     "description": "<p>Use webhooks in workflows to pass information about a Lead from FranConnect to another web application.</p>"
     },
     {
-    "name": "CRM WEBHOOK",
+    "name": "CRM Webhook",
     "description": "<p>Use webhooks in workflows to pass information about a Lead/Contact from FranConnect to another web application.</p>"
     },
     {
@@ -227,7 +227,7 @@
         "Lead",
         "INFO MANAGER WEBHOOK",
         "FRANCHISE",
-        "CRM WEBHOOK",
+        "CRM Webhook",
         "LEAD/CONTACT"
       ]
     }
@@ -5672,7 +5672,7 @@
       "/Customer Webhook_URL": {
         "post": {
           "tags": [
-            "CRM WEBHOOK"
+            "CRM Webhook"
           ],
           "summary": "LEAD/CONTACT",
           "description": "<p>To enable the Webhook feature, you can send an email to helpdesk@franconnect.com and share the webhook URL where the updates can be pushed in the JSON format. Once the feature is enabled, the Webhook URL must be configured for receiving Webhook notifications. Please read the following steps to configure your Webhook URL:<ol><li>Enter Workflow Name and select Workflow Type along with Record Type in the CRM > Workflows. For this instance, we have selected Lead as the Record Type.</li><li>Select when to Trigger the Workflow accordingly.</li><li>Choose Workflow condition “Which Leads do you want to execute this workflow on?” – All Leads or Leads matching required condition(s). If selecting “All Leads”, then as the name suggests, the Workflow condition would apply to all the Leads. But, if selecting “Leads matching required condition(s)”, then select Fields to filter Leads from the drop-down list.</li><li>Choose Action from the drop-down list, and select “Configure Webhook URL”.<p><img src=\"images/Create_CRM_Workflow.png\"></li><li>A pop-up “Configure Webhook URL” would display. Enter the valid Webhook URL, and click “Associate & Save”.</li><p><img src=\"images/Configure_CRM_Webhook_URL.png\"></ol></p><br><p><b>Receiving Webhook Notifications</b></p><p>FranConnect Sky System would send Webhook notifications via HTTP POST requests in the JSON Format to the URL endpoints that you defined to Retrieve Primary Info of a Lead or Contact in the CRM Module along with the Tenant ID. Tenant ID would be the name of the Tenant. An example of the dataset format is given on the right panel.</p>",

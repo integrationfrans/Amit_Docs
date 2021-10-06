@@ -5482,7 +5482,7 @@
           }
         }
       },
-       "/{customer_Webhook URL}": {
+       "/{customer_SalesWebhook URL}": {
           "post": {
             "tags": [
               "Sales Webhook"
@@ -5602,13 +5602,13 @@
             }
           }
         },
-        "/{Customer_Webhook_URL}": {
+        "/{Customer_IMWebhook_URL}": {
           "post": {
             "tags": [
               "INFO MANAGER WEBHOOK"
             ],
             "summary": "FRANCHISE",
-            "description": "<p>To enable this feature, you can send an email to helpdesk@franconnect.com and share the webhook URL(an endpoint that can receive the array of events as JSON objects) where the updates can be pushed in the JSON format. Once the feature is enabled, the following events are captured:- <ul> <li>When new data is added, updated or deleted in any of the tabs (System and Custom)</li> <li>When a franchise is added, transferred, terminated or deactivated</li> </ul> <br> The information provided by you gets pushed to the endpoint in just 5 minutes.</p><br><p>Furthermore, if multiple modifications are made within the given 5 minutes period across the franchise(s), you will receive an array of JSON objects. For example, a Guarantor is added, an Employee is deleted in an ABC franchise and an update is performed on the Center Info details of an XYZ franchise. Along with that, another update is performed on the Center Info details of a PQR franchise in lieu of its deactivation in the same 5 minutes session. Then, all of these events will get captured. The format that you will receive the data in for this example is given on the right-hand side.<p>",
+            "description": "<p>To enable this feature, you can send an email to helpdesk@franconnect.com and share the webhook URL(an endpoint that can receive the array of events as JSON objects) where the updates can be pushed in the JSON format. Once the feature is enabled, the following events are captured:- <ul> <li>When new data is added, updated or deleted in any of the tabs (System and Custom)</li> <li>When a franchise is added, transferred, terminated or deactivated</li> </ul> <br> The information provided by you gets pushed to the endpoint in just 5 minutes.</p><p>Furthermore, if multiple modifications are made within the given 5 minutes period across the franchise(s), you will receive an array of JSON objects. For example, a Guarantor is added, an Employee is deleted in an ABC franchise and an update is performed on the Center Info details of an XYZ franchise. Along with that, another update is performed on the Center Info details of a PQR franchise in lieu of its deactivation in the same 5 minutes session. Then, all of these events will get captured. The format that you will receive the data in for this example is given on the right-hand side.<p>",
             "operationId": "FRANCHISE",
             "produces": [
               "application/json"
@@ -5647,8 +5647,16 @@
                             "eventDateTime": "2021-07-09T02:52:10.067197Z",
                             "franchiseeName": "XYZ",
                             "parentReferenceId": "1973910563"
-                            }
-                            
+                            },
+                            {
+                                "tabName": "Center Info",
+                                "subModule": "franchisees",
+                                "changeEvent": "update",
+                                "referenceId": "1001650231",
+                                "eventDateTime": "2021-07-09T02:52:50.067197Z",
+                                "franchiseeName": "PQR",
+                                "parentReferenceId": "1321910544"
+                                }
                         ]
   
                     
@@ -5669,7 +5677,7 @@
             }
           }
         },
-        "/{customer_webhook_URL}": {
+        "/{customer_CRMwebhook_URL}": {
           "post": {
             "tags": [
               "CRM Webhook"

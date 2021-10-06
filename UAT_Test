@@ -5604,7 +5604,7 @@
                     "INFO MANAGER WEBHOOK"
                 ],
                 "summary": "FRANCHISE",
-                "description": "<p>To enable this feature, you can send an email to helpdesk@franconnect.com and share the webhook URL(an endpoint that can receive the array of events as JSON objects) where the updates can be pushed in the JSON format. Once the feature is enabled, the following events are captured:- <ul> <li>addition of a franchise</li> <li>update in a franchise</li> <li>termination of a franchise</li> <li>deactivation of a franchise</li> <li>addition, update or deletion of new data in any of the tabs (System and Custom)</li> </ul> <br> In just 5 minutes the information is pushed to the endpoint provided by you.</p><p>Furthermore, if multiple modifications are made within the given 5 minutes period across the franchise(s), you will receive an array of JSON objects. For example, a Guarantor is added, an Employee is deleted in an ABC franchise and an update is performed on the Center Info details of an XYZ franchise. Along with that, a PQR franchise is deactivated from the admin in the same 5 minutes session. Then, all of these events will get captured. The format that you will receive the data in for this example is given on the right-hand side.<p>",
+                "description": "<p>To enable this feature, you can send an email to helpdesk@franconnect.com and share the webhook URL(an endpoint that can receive the array of events as JSON objects) where the updates can be pushed in the JSON format. Once the feature is enabled, the following events are captured:- <ul> <li>addition of a franchise</li> <li>transfer of a franchise</li> <li>termination of a franchise</li> <li>deactivation of a franchise</li> <li>addition, update or deletion in any of the tabs (System and Custom)</li> </ul> <br> In just 5 minutes the information is pushed to the endpoint provided by you.</p><p>Furthermore, if multiple events happen within the given 5 minutes period across the franchise(s), you will receive an array of JSON objects. For example, a Guarantor is added, an Employee is deleted in an ABC franchise and an XYZ franchise is added. Along with that, a PQR franchise is deactivated from the admin in the same 5 minutes session. Then, all of these events will get captured. The format that you will receive the data in for this example is given on the right-hand side.<p>",
                 "operationId": "FRANCHISE",
                 "produces": [
                     "application/json"
@@ -5635,17 +5635,17 @@
                                     {
                                         "tabName": "Center Info",
                                         "subModule": "franchisees",
-                                        "changeEvent": "update",
+                                        "changeEvent": "add",
                                         "referenceId": "1631650236",
                                         "eventDateTime": "2021-07-09T02:52:10.067197Z",
                                         "franchiseeName": "XYZ",
-                                        "parentReferenceId": "1973910563"
+                                        "parentReferenceId": "1631650236"
                                     },
                                     {
                                         "tabName": "Center Info",
                                         "subModule": "franchisees",
                                         "changeEvent": "update",
-                                        "referenceId": "1631650236",
+                                        "referenceId": "1973910563",
                                         "eventDateTime": "2021-07-09T02:53:20.067197Z",
                                         "franchiseeName": "PQR",
                                         "parentReferenceId": "1973910563"
